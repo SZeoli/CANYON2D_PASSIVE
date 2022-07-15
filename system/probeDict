@@ -1,0 +1,46 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.1.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Fields to be probed. runTime modifiable!
+        fields
+        (
+	  U
+	  NO
+	  NO2
+        );
+
+// Locations to be probed. runTime modifiable!
+        probeLocations
+        (
+	    //probe canyon left
+	    ( -9.0  20.0 17.0)		//3
+	    ( -7.9 20.0 15.47)		//4
+	    ( -7.9 20.0 10.67)		//5
+            ( -7.9 20.0 5.33)		//6
+	    ( -7.9 20.0 2.67)		//7
+
+            //probe canyon left         
+            (  7.9 20.0 15.47)         //11    
+            (  7.9 20.0 10.67)         //12    
+            (  7.9 20.0 5.33)          //13    
+            (  7.9 20.0 2.67)          //14    
+
+	
+        );
+
+// ************************************************************************* //
+
